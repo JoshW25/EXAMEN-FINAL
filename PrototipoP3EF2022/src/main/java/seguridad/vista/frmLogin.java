@@ -5,14 +5,14 @@
  */
 package seguridad.vista;
 
-import compras.vista.mdiComprasG2;
+
 import seguridad.controlador.clsUsuario;
 import java.awt.HeadlessException;
 
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import prototipos.vista.mdiPrototipo;
-import seguridad.controlador.clsBitacora;
+
 import seguridad.controlador.clsUsuarioConectado;
 import seguridad.modelo.daoUsuario;
 
@@ -149,7 +149,7 @@ public class frmLogin extends javax.swing.JFrame {
     private void btnAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAceptarActionPerformed
         // TODO add your handling code here:
 
-        clsBitacora bitacora = new clsBitacora();
+
 
         if (txtUsuario.getText().trim().isEmpty() || txtContraseña.getText().trim().isEmpty()) {
             JOptionPane.showMessageDialog(this, "NO PUEDEN HABER CAMPOS VACIOS", "ERROR", JOptionPane.ERROR_MESSAGE);
@@ -202,8 +202,7 @@ public class frmLogin extends javax.swing.JFrame {
 
                             
 
-                            mdiComprasG2 menuCompras = new mdiComprasG2();
-                            menuCompras.setVisible(true);
+                     
                            
                             this.dispose();
                         } catch (Exception e) {
