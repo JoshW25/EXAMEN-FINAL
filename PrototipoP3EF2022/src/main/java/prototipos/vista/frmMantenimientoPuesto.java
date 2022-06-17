@@ -276,6 +276,7 @@ public class frmMantenimientoPuesto extends javax.swing.JInternalFrame {
         txtbuscado.setText("");
         txtNombre.setText("");
         txtId.setText("");
+        txtSalario.setText("");
         btnRegistrar.setEnabled(true);
         btnModificar.setEnabled(true);
         btnEliminar.setEnabled(true);
